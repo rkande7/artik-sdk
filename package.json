@@ -4,7 +4,25 @@
   "description": "SDK for developing applications for Samsung's ARTIK platform",
   "main" : "src/index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "all": "./node_modules/.bin/mocha --reporter mochawesome",
+    "adc": "./node_modules/.bin/mocha -R mochawesome test/adc-test.js",
+    "bluetooth": "./node_modules/.bin/mocha -R mochawesome test/bluetooth-test.js",
+    "cloud": "./node_modules/.bin/mocha -R mochawesome test/cloud-test.js",
+    "cloud-websocket": "./node_modules/.bin/mocha -R mochawesome test/cloud-websocket-test.js",
+    "gpio": "./node_modules/.bin/mocha -R mochawesome test/gpio-test.js",
+    "http": "./node_modules/.bin/mocha -R mochawesome test/http-test.js",
+    "i2c": "./node_modules/.bin/mocha -R mochawesome test/i2c-test.js",
+    "lwm2m": "./node_modules/.bin/mocha -R mochawesome test/lwm2m-test.js",
+    "media": "./node_modules/.bin/mocha -R mochawesome test/media-test.js",
+    "mqtt": "./node_modules/.bin/mocha -R mochawesome test/mqtt-test.js",
+    "network": "./node_modules/.bin/mocha -R mochawesome test/network-test.js",
+    "pwm": "./node_modules/.bin/mocha -R mochawesome test/pwm-test.js",
+    "sensor": "./node_modules/.bin/mocha -R mochawesome test/sensor-test.js",
+    "serial": "./node_modules/.bin/mocha -R mochawesome test/serial-test.js",
+    "spi": "./node_modules/.bin/mocha -R mochawesome test/spi-test.js",
+    "time": "./node_modules/.bin/mocha -R mochawesome test/time-test.js",
+    "websocket": "./node_modules/.bin/mocha -R mochawesome test/websocket-test.js",
+    "wifi": "./node_modules/.bin/mocha -R mochawesome test/wifi-test.js"
   },
   "keywords": [
       "Samsung",
