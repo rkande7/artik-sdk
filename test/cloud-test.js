@@ -17,7 +17,7 @@ var device_id  = process.env.CLOUD_DEVICE_ID;
 var message    = process.env.CLOUD_MESSAGE;
 var action     = process.env.CLOUD_ACTION;
 var cloud      = artik.cloud(auth_token);
-var user_id;
+var user_id    = process.env.CLOUD_USER_ID;
 
 
 /* Test Case Module */

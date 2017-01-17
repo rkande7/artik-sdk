@@ -17,7 +17,7 @@ var remote_addr = process.env.BT_ADDR;
 
 
 /* Test Case Module */
-testCase('Bluetooth', function() {
+testtestCase('Bluetooth', function() {
 
 	pre(function() {
 	});
